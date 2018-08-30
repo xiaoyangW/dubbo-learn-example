@@ -8,5 +8,6 @@
     <packaging>pom</packaging>
     <modules>
         <module>zookeeper-server</module>
+        <module>dubbo-admin</module>
     </modules>
 </project>
