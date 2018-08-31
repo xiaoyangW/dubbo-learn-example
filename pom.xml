@@ -9,5 +9,7 @@
     <modules>
         <module>zookeeper-server</module>
         <module>dubbo-admin</module>
+        <module>dubbo-service</module>
+        <module>dubbo-client</module>
     </modules>
 </project>
