@@ -11,7 +11,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 @SpringBootApplication
 public class DubboClientApplication {
 
-	@Reference(url = "dubbo://localhost:20880")
+	@Reference(url = "dubbo://169.254.1.7:20880",version = "1.0.0")
   	private DubboService demoService;
 
 	public static void main(String[] args) {
