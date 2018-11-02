@@ -1,6 +1,6 @@
 package com.xiaoyang;
 
-public interface HelloService {
+public interface DubboService {
 
     String sayHello(String name);
 
