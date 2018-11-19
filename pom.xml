@@ -9,8 +9,8 @@
     <modules>
         <module>zookeeper-server</module>
         <module>dubbo-admin</module>
-        <module>dubbo-service</module>
-        <module>dubbo-client</module>
+        <module>dubbo-example-consumer</module>
+        <module>dubbo-example-provider</module>
     </modules>
     <parent>
         <groupId>org.springframework.boot</groupId>
