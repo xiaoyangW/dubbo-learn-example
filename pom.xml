@@ -9,6 +9,7 @@
     <modules>
         <module>zookeeper-server</module>
         <module>dubbo-admin</module>
+        <module>dubbo-example-api</module>
         <module>dubbo-example-consumer</module>
         <module>dubbo-example-provider</module>
     </modules>
