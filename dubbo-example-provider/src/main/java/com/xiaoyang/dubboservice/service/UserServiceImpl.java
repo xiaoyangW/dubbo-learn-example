@@ -1,9 +1,8 @@
 package com.xiaoyang.dubboservice.service;
 
+import com.alibaba.dubbo.config.annotation.Service;
 import com.xiaoyang.consumer.IUserService;
 import com.xiaoyang.pojo.User;
-import org.springframework.stereotype.Service;
-
 import java.util.HashMap;
 import java.util.Map;
 
@@ -11,7 +10,10 @@ import java.util.Map;
  * @author WXY
  * @date 2018/11/22 20:24
  */
-@Service
+@Service(version = "${example.service.version}",
+        application = "${dubbo.application.id}",
+        protocol = "${dubbo.protocol.id}",
+        registry = "${dubbo.registry.id}")
 public class UserServiceImpl implements IUserService {
 
     private final Map<String, User> userMap;
