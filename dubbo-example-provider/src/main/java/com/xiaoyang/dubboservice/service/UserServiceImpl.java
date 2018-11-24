@@ -20,6 +20,7 @@ public class UserServiceImpl implements IUserService {
 
     public UserServiceImpl() {
         this.userMap = new HashMap<>(10);
+        userMap.put("user1",new User(1,"user1"));
     }
 
     @Override
