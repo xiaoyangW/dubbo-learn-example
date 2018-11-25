@@ -13,9 +13,10 @@ import org.springframework.web.bind.annotation.RestController;
  */
 @RestController
 public class UserController {
-    @Reference(version = "${example.service.version}",
-            application = "${dubbo.application.id}",
-            url = "dubbo://169.254.1.7:12345")
+    //(version = "${example.service.version}",
+    //            application = "${dubbo.application.id}",
+    //            url = "dubbo://169.254.1.7:12345")
+    @Reference(version = "1.0.0",registry="${dubbo.registry.id}")
     private IUserService userService;
 
     @GetMapping("/get-user/{name}")
