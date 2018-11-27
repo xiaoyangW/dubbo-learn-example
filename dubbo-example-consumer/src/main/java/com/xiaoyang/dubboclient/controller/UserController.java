@@ -16,11 +16,11 @@ public class UserController {
     //(version = "${example.service.version}",
     //            application = "${dubbo.application.id}",
     //            url = "dubbo://169.254.1.7:12345")
-    @Reference(version = "1.0.0",registry="${dubbo.registry.id}")
+    @Reference(version = "${example.service.version}",registry="${dubbo.registry.id}",retries = 3)
     private IUserService userService;
 
     @GetMapping("/get-user/{name}")
-    public User getUser(@PathVariable("name") String name){
+    public User getUser(@PathVariable("name") String name) throws InterruptedException {
         return  userService.getUser(name);
     }
 }
